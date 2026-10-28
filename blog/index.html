@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog | Gabrial Zencha Ashungafac</title>
-  <meta name="description" content="Paper explainers and notes by Gabrial Zencha Ashungafac.">
+  <meta name="description" content="Paper explainers, awards, and notes by Gabrial Zencha Ashungafac.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23b5121b'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>GZ</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,17 +33,17 @@
 <main class="container page">
   <header class="page-header">
     <h1>blog</h1>
-    <p class="desc">Plain-language explainers of my papers, plus notes on speech, ML, and research life.</p>
+    <p class="desc">Plain-language explainers of my papers, awards and milestones, and notes on speech, ML, and research life.</p>
   </header>
 
-  <!-- To add a post: copy afrispeech-multibench.html, edit it, and add an <li> here (newest first). -->
-  <ul class="post-list">
-    <li>
-      <h3><a href="afrispeech-multibench.html">[Explainer] AfriSpeech-MultiBench: why African-accented ASR needs domain-specific evaluation</a></h3>
-      <div class="post-meta"><span class="placeholder">Draft</span> · asr · benchmarks · explainer</div>
-      <p class="muted small">What breaks when you evaluate speech recognition on clinical, legal, and everyday African-accented English, and what we learned from benchmarking 19 models.</p>
-    </li>
-  </ul>
+  <div class="blog-layout">
+    <aside class="blog-sidebar" id="blog-sidebar" aria-label="Blog navigation"></aside>
+    <section>
+      <h2 id="post-index-heading" style="margin-top:0">all posts</h2>
+      <!-- Posts are listed from posts.js -->
+      <ul class="post-list" id="post-index"></ul>
+    </section>
+  </div>
 </main>
 
 <footer>
@@ -51,5 +51,7 @@
 </footer>
 
 <script src="../assets/js/main.js"></script>
+<script src="posts.js"></script>
+<script src="../assets/js/blog.js"></script>
 </body>
 </html>
