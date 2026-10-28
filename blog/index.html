@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Gabrial Zencha Ashungafac</title>
+  <meta name="description" content="Paper explainers and notes by Gabrial Zencha Ashungafac.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23b5121b'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>GZ</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=JetBrains+Mono&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" href="../index.html"><strong>Gabrial</strong> Zencha Ashungafac</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">about</a></li>
+      <li><a href="../publications.html">publications</a></li>
+      <li><a href="../research.html">research</a></li>
+      <li><a href="../teaching.html">teaching</a></li>
+      <li><a href="index.html" class="active">blog</a></li>
+      <li><a href="../cv.html">cv</a></li>
+      <li><button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button></li>
+    </ul>
+    <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</nav>
+
+<main class="container page">
+  <header class="page-header">
+    <h1>blog</h1>
+    <p class="desc">Plain-language explainers of my papers, plus notes on speech, ML, and research life.</p>
+  </header>
+
+  <!-- To add a post: copy afrispeech-multibench.html, edit it, and add an <li> here (newest first). -->
+  <ul class="post-list">
+    <li>
+      <h3><a href="afrispeech-multibench.html">[Explainer] AfriSpeech-MultiBench: why African-accented ASR needs domain-specific evaluation</a></h3>
+      <div class="post-meta"><span class="placeholder">Draft</span> · asr · benchmarks · explainer</div>
+      <p class="muted small">What breaks when you evaluate speech recognition on clinical, legal, and everyday African-accented English, and what we learned from benchmarking 19 models.</p>
+    </li>
+  </ul>
+</main>
+
+<footer>
+  <div class="container">© <span class="year">2026</span> Gabrial Zencha Ashungafac · Hosted on GitHub Pages</div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

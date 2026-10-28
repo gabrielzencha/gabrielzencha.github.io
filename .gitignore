@@ -1,0 +1,7 @@
+# Private: never publish
+*CV*.pdf
+
+# Original full-size photos (web versions live in assets/img/)
+CRSS*.jpg
+
+.DS_Store

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Gabrial Zencha Ashungafac</title>
+  <meta name="description" content="Research directions of Gabrial Zencha Ashungafac: African speech recognition, LLM reliability, robust vision, and time-series sensing.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23b5121b'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>GZ</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=JetBrains+Mono&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" href="index.html"><strong>Gabrial</strong> Zencha Ashungafac</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">about</a></li>
+      <li><a href="publications.html">publications</a></li>
+      <li><a href="research.html" class="active">research</a></li>
+      <li><a href="teaching.html">teaching</a></li>
+      <li><a href="blog/index.html">blog</a></li>
+      <li><a href="cv.html">cv</a></li>
+      <li><button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button></li>
+    </ul>
+    <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</nav>
+
+<main class="container page">
+  <header class="page-header">
+    <h1>research</h1>
+    <p class="desc">Learning reliable structure from noisy, heterogeneous, real-world signals.</p>
+  </header>
+
+  <p>
+    A common thread in my work is that real-world data rarely looks like benchmark data. Speech is accented and code-switched,
+    sensors drift and fail, and models trained in one setting quietly break in another. I am interested in methods, and in
+    evaluations, that make these failure modes visible and fixable. My background in signal processing and stochastic
+    processes shapes how I approach these problems: I treat the data-generating process as a first-class object and not just
+    a source of training examples.
+  </p>
+
+  <h2>current directions</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Speech recognition for African languages</h3>
+      <p>
+        Benchmarks and systems for accented, multilingual, and code-switched speech in the wild. I lead the AfriSpeech-MultiBench
+        and AfriSwitch benchmarks, benchmarked 19 ASR models, and am building a multilingual ASR system covering 15 African
+        languages spoken by about 90% of speakers on the continent.
+      </p>
+      <span class="tags">ASR · benchmarks · code-switching · low-resource</span>
+    </div>
+    <div class="card">
+      <h3>Reliable large language models</h3>
+      <p>
+        Quantifying and mitigating selection bias in multiple-choice evaluation through LoRA fine-tuning and efficient majority
+        voting, and adapting LLMs to specialised domains such as telecommunications (QMOS).
+      </p>
+      <span class="tags">LLMs · evaluation · bias · domain adaptation</span>
+    </div>
+    <div class="card">
+      <h3>Robust computer vision</h3>
+      <p>
+        Unified detection of physical and digital face attacks with triplet embeddings and a differentiable Soft-ACER loss (TSANet),
+        and large-scale OCR data for under-resourced scripts (Fidel, Amharic).
+      </p>
+      <span class="tags">anti-spoofing · metric learning · OCR</span>
+    </div>
+    <div class="card">
+      <h3>Time-series &amp; sensor data</h3>
+      <p>
+        Forecasting and anomaly detection for CO₂/O₂ telemetry in cold-storage IoT systems, and sensor fusion under uncertainty.
+        This is where my interest in learning from noisy observational signals started.
+      </p>
+      <span class="tags">forecasting · anomaly detection · IoT</span>
+    </div>
+  </div>
+
+  <h2>looking ahead</h2>
+  <p>
+    <span class="placeholder">In my PhD I want to study … — 2–4 sentences on the specific open questions you want to pursue,
+    e.g. robust speech representations under domain and accent shift, or principled uncertainty for ASR in low-resource settings.
+    Mention the kinds of groups or advisors whose work you are excited about.</span>
+  </p>
+
+  <h2>open-source &amp; resources</h2>
+  <ul>
+    <li><strong>AfriSpeech-MultiBench</strong>: evaluation suite for African-accented English ASR. <span class="placeholder">link to code / dataset</span></li>
+    <li><strong>AfriSwitch</strong>: in-the-wild African code-switched speech benchmark. <span class="placeholder">link to code / dataset</span></li>
+    <li><strong>Fidel</strong>: sentence-level Amharic OCR dataset. <span class="placeholder">link to dataset</span></li>
+    <li>More on <a href="https://github.com/gabrielzencha" target="_blank" rel="noopener">GitHub</a>.</li>
+  </ul>
+</main>
+
+<footer>
+  <div class="container">© <span class="year">2026</span> Gabrial Zencha Ashungafac · Hosted on GitHub Pages</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
