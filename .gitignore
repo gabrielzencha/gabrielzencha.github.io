@@ -5,3 +5,7 @@
 CRSS*.jpg
 
 .DS_Store
+
+# Private application materials: never publish
+private/
+Program Interests.html

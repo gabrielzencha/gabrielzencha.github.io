@@ -43,15 +43,27 @@
     processes shapes how I approach these problems: I treat the data-generating process as a first-class object and not just
     a source of training examples.
   </p>
+  <p>
+    In African speech this matters directly. Many models look strong on paper and fail in deployment because the conditions
+    that break them (code-switching within a sentence, numbers and named entities, specialised vocabulary in health, law and
+    finance, noisy phone audio) were rarely measured. Collecting more of the same data, or generating synthetic speech without
+    first characterising these failures, has not closed the gap. My work starts by making the failures visible, then
+    targets them.
+  </p>
 
   <h2>current directions</h2>
   <div class="cards">
     <div class="card">
       <h3>Speech recognition for African languages</h3>
       <p>
-        Benchmarks and systems for accented, multilingual, and code-switched speech in the wild. I lead the AfriSpeech-MultiBench
-        and AfriSwitch benchmarks, benchmarked 19 ASR models, and am building a multilingual ASR system covering 15 African
-        languages spoken by about 90% of speakers on the continent.
+        Benchmarks and systems for accented, multilingual, and code-switched speech in the wild. I led the AfriSpeech-MultiBench
+        (100+ accents, 10+ countries, seven domains) and AfriSwitch benchmarks; AfriSwitch uses real, spontaneous code-switched
+        speech annotated at each switch, not synthetic code-switched sentences. I also contributed to AfriVox-v2.
+        To understand failures, not just count them, I work with native-speaker reviewers in more than 30 languages. These studies show that
+        open-source ASR degrades on noisy, non-native dialogue, multimodal LLMs struggle with domain-specific named entities, and
+        hallucination remains common. At Intron Health I benchmarked 19 ASR models, built a production African-accented English
+        system that outperforms them, and am building a multilingual ASR system covering 15 African languages spoken by about
+        90% of speakers on the continent.
       </p>
       <span class="tags">ASR · benchmarks · code-switching · low-resource</span>
     </div>
@@ -81,18 +93,30 @@
     </div>
   </div>
 
-  <h2>looking ahead</h2>
+  <h2>looking ahead: PhD research interests</h2>
   <p>
-    <span class="placeholder">In my PhD I want to study … — 2–4 sentences on the specific open questions you want to pursue,
-    e.g. robust speech representations under domain and accent shift, or principled uncertainty for ASR in low-resource settings.
-    Mention the kinds of groups or advisors whose work you are excited about.</span>
+    My benchmark work keeps showing the same pattern: speech models that look strong on standard test sets degrade sharply
+    on accented, code-switched, and domain-specific speech, and we have few tools to predict or repair that failure.
+    In my PhD I want to move from measuring these failures to fixing them. I am interested in how self-supervised and
+    multilingual speech representations break under accent, domain, and language shift; how to adapt them to new varieties
+    with very little labeled data; and how to give ASR systems calibrated uncertainty so they know when they are likely to
+    be wrong. I want to approach these questions with the same signal-processing and probabilistic lens that runs through
+    the rest of my work, and with under-resourced languages as a primary testbed rather than an afterthought.
   </p>
+  <p>Concretely, questions I would like to work on:</p>
+  <ul>
+    <li>Why do pretrained speech representations degrade on accented and code-switched speech, and can we predict that degradation before deployment?</li>
+    <li>How can a multilingual ASR model be adapted to a new language or accent from a few hours of labeled audio without forgetting the others?</li>
+    <li>How should code-switching be modeled inside the recognizer rather than only addressed through more data?</li>
+    <li>Can ASR systems produce calibrated, word-level confidence that flags hallucinations and domain errors (names, numbers, medical terms)?</li>
+  </ul>
 
   <h2>open-source &amp; resources</h2>
   <ul>
-    <li><strong>AfriSpeech-MultiBench</strong>: evaluation suite for African-accented English ASR. <span class="placeholder">link to code / dataset</span></li>
-    <li><strong>AfriSwitch</strong>: in-the-wild African code-switched speech benchmark. <span class="placeholder">link to code / dataset</span></li>
-    <li><strong>Fidel</strong>: sentence-level Amharic OCR dataset. <span class="placeholder">link to dataset</span></li>
+    <li><strong>AfriSpeech-MultiBench</strong>: evaluation suite for African-accented English ASR. <a href="https://arxiv.org/abs/2511.14255" target="_blank" rel="noopener">paper</a> · <a href="https://huggingface.co/collections/intronhealth/afrispeechmultibench" target="_blank" rel="noopener">data</a></li>
+    <li><strong>AfriSwitch</strong>: in-the-wild African code-switched speech benchmark. <a href="https://arxiv.org/abs/2608.26434" target="_blank" rel="noopener">paper</a> · <a href="https://huggingface.co/datasets/intronhealth/AfriSwitch" target="_blank" rel="noopener">data</a></li>
+    <li><strong>AfriVox-v2</strong>: domain-verticalized benchmark for in-the-wild African speech recognition. <a href="https://arxiv.org/abs/2605.03590" target="_blank" rel="noopener">paper</a> · <a href="https://huggingface.co/datasets/intronhealth/afrivox-v2" target="_blank" rel="noopener">data</a></li>
+    <li><strong>Fidel</strong>: sentence-level Amharic OCR dataset. <a href="https://huggingface.co/datasets/upanzi/fidel-dataset" target="_blank" rel="noopener">data</a></li>
     <li>More on <a href="https://github.com/gabrielzencha" target="_blank" rel="noopener">GitHub</a>.</li>
   </ul>
 </main>

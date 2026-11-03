@@ -18,13 +18,5 @@ window.BLOG_POSTS = [
     category: "awards",
     tags: ["emnlp", "reviewing", "service"],
     summary: "Recognized as an Outstanding Reviewer for the 2026 Conference on Empirical Methods in Natural Language Processing."
-  },
-  {
-    slug: "afrispeech-multibench",
-    title: "[Explainer] AfriSpeech-MultiBench: why African-accented ASR needs domain-specific evaluation",
-    date: "",
-    category: "research",
-    tags: ["asr", "benchmarks"],
-    summary: "What breaks when you evaluate speech recognition on clinical, legal, and everyday African-accented English, and what we learned from benchmarking 19 models."
   }
 ];
